@@ -1,0 +1,118 @@
+body {
+    font-size: 16px;
+    font-family: Oxygen, sans-serif;
+    color: white;
+    background-color: #61122f;
+}
+
+header {
+    width: 100%;
+    min-width: 1100px;
+    background-color: #f6b319;
+}
+
+#header-nav {
+    border-radius: 0%;
+    border: 0;
+
+}
+
+#logo-img {
+    background: url(../images/restaurant-logo_large.png) no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0px;
+}
+
+.logo {
+    float: left;
+}
+
+.navbar-brand {
+    vertical-align: baseline;
+}
+
+.navbar-brand a {
+    text-decoration: none;
+}
+
+
+
+.navbar-brand h1 {
+    font-family: Lora, serif;
+    text-transform: uppercase;
+    color: #557c3e;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 50px;
+    margin-bottom: 0;
+    line-height: .75;
+    vertical-align: middle;
+}
+
+.navbar-brand p {
+    /* Kosher cert */
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+}
+
+.navbar-brand p span {
+    /* Star-K */
+    vertical-align: middle;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+
+#nav-list {
+    margin-top: 10px;
+}
+
+.nav-link {
+    color: #951c49;
+}
+
+.nav-link span {
+    font-size: 1.8em;
+}
+
+.nav-item {
+    min-width: max-content;
+    padding-left: 1.5rem;
+}
+
+#phone a {
+    /* Phone number */
+
+    padding-bottom: 0;
+}
+
+#phone div {
+    /* We Deliver */
+    color: #557c3e;
+    padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+    .navbar-left {
+        float: left !important;
+    }
+
+    .navbar-right {
+        float: right !important;
+
+    }
+
+    .navbar-right~.navbar-right {
+        margin-right: 0;
+    }
+}
