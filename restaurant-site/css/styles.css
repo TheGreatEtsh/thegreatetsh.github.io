@@ -6,15 +6,9 @@ body {
 }
 
 header {
-    width: 100%;
     background-color: #f6b319;
 }
 
-#header-nav {
-    border-radius: 0%;
-    border: 0;
-
-}
 
 #logo-img {
     background: url(../images/restaurant-logo_large.png) no-repeat;
@@ -23,32 +17,52 @@ header {
     margin: 10px 15px 10px 0px;
 }
 
-
-.logo {
-    float: left;
-}
-
-.navbar-brand {
-    vertical-align: baseline;
-}
-
-.navbar-brand a {
+.navbar-text a {
     text-decoration: none;
 }
 
 
-
-.navbar-brand h1 {
+.navbar-text h1 {
     font-family: Lora, serif;
     text-transform: uppercase;
     color: #557c3e;
     font-size: 1.5em;
     font-weight: bold;
     text-shadow: 1px 1px 1px #222;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 0;
-    line-height: .75;
-    vertical-align: middle;
+    margin-left: 0px;
+    padding-left: 0px;
+    text-align: left;
+    clear: both;
+}
+
+
+.navbar-brand {
+    float: left;
+}
+
+.navbar-text {
+    float: left;
+}
+
+
+
+.navbar-toggler {
+    position: relative;
+    clear: both;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    padding: 9px 10px;
+    background-image: none;
+    overflow: visible;
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        display: none;
+    }
 }
 
 .navbar-brand p {
@@ -60,7 +74,6 @@ header {
 }
 
 .navbar-brand p span {
-    /* Star-K */
     vertical-align: middle;
 }
 
@@ -87,7 +100,7 @@ header {
 
 .nav-item {
     min-width: max-content;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
 }
 
 #phone a {
@@ -102,178 +115,6 @@ header {
     padding-right: 15px;
 }
 
-@media (min-width: 768px) {
-    .navbar-left {
-        float: left !important;
-    }
-
-    .navbar-right {
-        float: right !important;
-
-    }
-
-    .navbar-right~.navbar-right {
-        margin-right: 0;
-    }
-}
-
-.visible-xs,
-.visible-sm,
-.visible-md,
-.visible-lg {
-  display: none !important;
-}
-.visible-xs-block,
-.visible-xs-inline,
-.visible-xs-inline-block,
-.visible-sm-block,
-.visible-sm-inline,
-.visible-sm-inline-block,
-.visible-md-block,
-.visible-md-inline,
-.visible-md-inline-block,
-.visible-lg-block,
-.visible-lg-inline,
-.visible-lg-inline-block {
-  display: none !important;
-}
-@media (max-width: 767px) and (min-width: 0px) {
-  .visible-xs {
-    display: block !important;
-  }
-  table.visible-xs {
-    display: table !important;
-  }
-  tr.visible-xs {
-    display: table-row !important;
-  }
-  th.visible-xs,
-  td.visible-xs {
-    display: table-cell !important;
-  }
-}
-@media (max-width: 767px) {
-  .visible-xs-block {
-    display: block !important;
-  }
-}
-@media (max-width: 767px) {
-  .visible-xs-inline {
-    display: inline !important;
-  }
-}
-@media (max-width: 767px) {
-  .visible-xs-inline-block {
-    display: inline-block !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .visible-sm {
-    display: block !important;
-  }
-  table.visible-sm {
-    display: table !important;
-  }
-  tr.visible-sm {
-    display: table-row !important;
-  }
-  th.visible-sm,
-  td.visible-sm {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .visible-sm-block {
-    display: block !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .visible-sm-inline {
-    display: inline !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .visible-sm-inline-block {
-    display: inline-block !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .visible-md {
-    display: block !important;
-  }
-  table.visible-md {
-    display: table !important;
-  }
-  tr.visible-md {
-    display: table-row !important;
-  }
-  th.visible-md,
-  td.visible-md {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .visible-md-block {
-    display: block !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .visible-md-inline {
-    display: inline !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .visible-md-inline-block {
-    display: inline-block !important;
-  }
-}
-@media (min-width: 1200px) {
-  .visible-lg {
-    display: block !important;
-  }
-  table.visible-lg {
-    display: table !important;
-  }
-  tr.visible-lg {
-    display: table-row !important;
-  }
-  th.visible-lg,
-  td.visible-lg {
-    display: table-cell !important;
-  }
-}
-@media (min-width: 1200px) {
-  .visible-lg-block {
-    display: block !important;
-  }
-}
-@media (min-width: 1200px) {
-  .visible-lg-inline {
-    display: inline !important;
-  }
-}
-@media (min-width: 1200px) {
-  .visible-lg-inline-block {
-    display: inline-block !important;
-  }
-}
-@media (max-width: 767px) {
-  .hidden-xs {
-    display: none !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .hidden-sm {
-    display: none !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .hidden-md {
-    display: none !important;
-  }
-}
-@media (min-width: 1200px) {
-  .hidden-lg {
-    display: none !important;
-  }
+.navbar-toggler {
+    margin-left: .75rem;
 }
