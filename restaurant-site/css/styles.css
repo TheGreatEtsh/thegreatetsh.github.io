@@ -17,6 +17,18 @@ header {
     margin: 10px 15px 10px 0px;
 }
 
+@media (min-width: 992px),
+(max-width: 1199px) {
+    #logo-img {
+        margin: auto;
+        background: url(../images/restaurant-logo_medium.png) no-repeat;
+        height: 100px;
+        width: 100px;
+        margin: 5px 5px 5px 0px;
+    }
+
+}
+
 .navbar-text a {
     text-decoration: none;
 }
@@ -50,7 +62,7 @@ header {
 
 .navbar-toggler {
     position: relative;
-    clear: both;
+    float: right;
     margin-right: 15px;
     margin-bottom: 8px;
     background-color: transparent;
@@ -59,13 +71,7 @@ header {
     overflow: visible;
 }
 
-@media (max-width: 991px) {
-    .navbar-brand {
-        display: none;
-    }
-}
-
-.navbar-brand p {
+.navbar-text p {
     /* Kosher cert */
     color: #000;
     text-transform: uppercase;
@@ -73,7 +79,7 @@ header {
     margin-top: 15px;
 }
 
-.navbar-brand p span {
+.navbar-text p span {
     vertical-align: middle;
 }
 
@@ -101,20 +107,136 @@ header {
 .nav-item {
     min-width: max-content;
     padding-left: 1rem;
+    font-size: 0.9em;
 }
 
 #phone a {
     /* Phone number */
-
+    padding-top: 20px;
     padding-bottom: 0;
 }
 
 #phone div {
     /* We Deliver */
     color: #557c3e;
-    padding-right: 15px;
+    padding-right: 10px
 }
 
 .navbar-toggler {
     margin-left: .75rem;
+}
+
+.jumbotron {
+    margin-top: 2.5%;
+    box-shadow: 0 0 10px #3f0c1f;
+    border-radius: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.jumbotron-container {
+    margin-top: 2.5%;
+    background-color: bisque;
+    border-radius: 5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(63, 12, 31, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgba(63, 12, 31);
+}
+
+@media (min-width: 767px) {
+    #call-btn {
+        display: none;
+    }
+
+    #xs-deliver {
+        display: none;
+    }
+
+    .horizotal-rule-xs hr {
+        display: none;
+    }
+
+    #phone div {
+        text-align: right;
+    }
+
+}
+
+#call-btn>a {
+    font-size: 1.25em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+}
+
+#call-btn {
+    width: fit-content;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.btn {
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space-collapse: collapse;
+    text-wrap: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+@media (max-width:766px) {
+    #xs-deliver {
+        display: block;
+        margin-top: 5px;
+        font-size: .7em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .horizontal-rule-xs hr {
+        display: block;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+}
+
+header .navbar .navbar-toggler {
+    clear: both;
+    margin: auto;
+    margin-right: 5%;
+}
+
+@media (max-width: 991px) {
+    #logo-img {
+        display: none;
+    }
+}
+
+@media (max-width: 622px) {
+    header .navbar .navbar-toggler {
+        margin-top: -10%;
+    }
+}
+
+.nav-item {
+    margin: auto;
 }
