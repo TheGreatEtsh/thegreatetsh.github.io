@@ -97,7 +97,7 @@ header {
 }
 
 .nav-link {
-    color: #951c49;
+    color: rgb(149, 28, 73);
 }
 
 .nav-link span {
@@ -143,11 +143,12 @@ header {
 
 
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(63, 12, 31, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(100, 28, 73, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .custom-toggler.navbar-toggler {
-    border-color: rgba(63, 12, 31);
+    border-color: rgba(100, 27, 71, 0.5);
+    border-width: 2px;
 }
 
 @media (min-width: 767px) {
@@ -239,4 +240,76 @@ header .navbar .navbar-toggler {
 
 .nav-item {
     margin: auto;
+}
+
+#home-tiles{
+    margin-top: 7.5%;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+    box-shadow: 0 0 5px white;
+}
+
+#menu-tile{
+    background: url(../images/menu-tile.jpg);
+    background-position: center;
+}
+
+#specials-tile{
+    background: url(../images/specials-tile.jpg);
+    background-position: center;
+}
+
+#menu-tile, #specials-tile, #map-tile{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+
+}
+
+footer{
+    background-color: #222;
+    padding-top: 30px;
+}
+footer .address, footer .hours{
+    line-height: 2;
+}
+footer .address #address-quote{
+    font-size: 0.85em;
+    color: #557c3e;
+    line-height: 2;
+}
+.feedbacks{
+    font-style: italic;
+}
+.copyright{
+    padding: 40px 0 30px 0;
+}
+
+@media (min-width: 576px) {
+    footer hr{
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    
+    footer .container .footer-row{
+        text-align: center;
+    }
 }
