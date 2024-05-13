@@ -396,6 +396,12 @@ footer .address #address-quote {
         margin-left: auto !important;
     }
 }
+@media (max-width : 768px) {
+    section .row .menu-item-description{
+        margin-top: 15px;
+    }    
+}
+
 
 .quantity{
     font-size: 0.75em;
