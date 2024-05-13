@@ -242,25 +242,29 @@ header .navbar .navbar-toggler {
     margin: auto;
 }
 
-#home-tiles{
+#home-tiles {
     margin-top: 7.5%;
 }
 
-#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+#menu-tile:hover,
+#specials-tile:hover,
+#map-tile:hover {
     box-shadow: 0 0 5px white;
 }
 
-#menu-tile{
+#menu-tile {
     background: url(../images/menu-tile.jpg);
     background-position: center;
 }
 
-#specials-tile{
+#specials-tile {
     background: url(../images/specials-tile.jpg);
     background-position: center;
 }
 
-#menu-tile, #specials-tile, #map-tile{
+#menu-tile,
+#specials-tile,
+#map-tile {
     height: 250px;
     width: 100%;
     margin-bottom: 15px;
@@ -269,7 +273,9 @@ header .navbar .navbar-toggler {
     overflow: hidden;
 }
 
-#menu-tile span, #specials-tile span, #map-tile span{
+#menu-tile span,
+#specials-tile span,
+#map-tile span {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -282,34 +288,125 @@ header .navbar .navbar-toggler {
 
 }
 
-footer{
+footer {
     background-color: #222;
     padding-top: 30px;
 }
-footer .address, footer .hours{
+
+footer .address,
+footer .hours {
     line-height: 2;
 }
-footer .address #address-quote{
+
+footer .address #address-quote {
     font-size: 0.85em;
     color: #557c3e;
     line-height: 2;
 }
-.feedbacks{
+
+.feedbacks {
     font-style: italic;
 }
-.copyright{
+
+.copyright {
     padding: 40px 0 30px 0;
 }
 
 @media (min-width: 576px) {
-    footer hr{
+    footer hr {
         display: none;
     }
 }
 
 @media (max-width: 575px) {
-    
-    footer .container .footer-row{
+
+    footer .container .footer-row {
         text-align: center;
     }
+}
+
+.main-content h2 {
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+.main-content .row {
+    margin: 30px auto 0;
+}
+
+.main-content hr {
+    margin: 20px auto 10px;
+    width: 50%;
+}
+
+.category-tile {
+    margin: auto;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.category-tile:hover{
+    box-shadow: 0 0 5px #fff;
+}
+
+.category-tile span {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.category-tile img {
+    width: 200px;
+    height: 200px;
+}
+
+.menu-item-photo{
+    max-width: 250px;
+    max-height: 150px;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    position: relative;
+}
+.menu-item-tag{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #557c3e;
+    width: 30%;
+}
+
+@media (max-width : 575px)
+{
+    .text-xs-center{
+        text-align: center;
+    }
+    .mx-xs-auto{
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+}
+
+.quantity{
+    font-size: 0.75em;
+}
+
+.menu-item-details{
+    font-style: italic;
+    font-size: 0.85em;
+    width: 100%;
+}
+
+menu-item-price{
+    margin-top: 20px;
 }
